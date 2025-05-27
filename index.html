@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modelo de habitaciones</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; background: #f8f8f8; color: #333; }
+    .header { background: #222; color: white; text-align: center; padding: 2rem 1rem; }
+    .header h1 { margin: 0; font-size: 2.5rem; }
+    .section { padding: 2rem 1rem; max-width: 1000px; margin: auto; background: white; margin-top: 2rem; box-shadow: 0 0 10px rgba(0,0,0,0.05); border-radius: 8px; }
+    .section h2 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .section p { margin-top: 0; line-height: 1.6; }
+    .images { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
+    .images img { width: 100%; max-width: 240px; border-radius: 8px; cursor: pointer; transition: 0.3s ease; }
+    .images img:hover { transform: scale(1.02); }
+    .lightbox {
+      display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8); justify-content: center; align-items: center;
+    }
+    .lightbox img { max-width: 90vw; max-height: 90vh; border-radius: 8px; }
+    .lightbox:target { display: flex; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Modelo de habitaciones</h1>
+  </div>
+
+  <div class="section">
+    <h2>Habitación 1</h2>
+    <p>Esta moderna habitación tipo loft con entrepiso ofrece una experiencia acogedora y funcional. Ideal para parejas o viajeros solos, cuenta con diseño minimalista, cocina integrada y baño privado. Perfecta para estancias temporales en Airbnb.</p>
+    <div class="images">
+      <a href="#img1"><img src="imagenes/fachada-dia-1.jpg" alt="Fachada diurna"></a>
+      <a href="#img2"><img src="imagenes/fachada-noche-1.jpg" alt="Fachada nocturna"></a>
+      <a href="#img3"><img src="imagenes/interior-dia-1.jpg" alt="Interior diurno"></a>
+      <a href="#img4"><img src="imagenes/baño-1.jpg" alt="Baño"></a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Habitación 2</h2>
+    <p>Con un diseño moderno en tonos oscuros y cálidos, esta habitación destaca por su estilo elegante. Incluye cocina funcional, baño privado con ducha tipo rain y entrepiso con cama doble. Perfecta para una experiencia cómoda y privada en Airbnb.</p>
+    <div class="images">
+      <a href="#img5"><img src="imagenes/fachada-dia-2.jpg" alt="Fachada diurna"></a>
+      <a href="#img6"><img src="imagenes/fachada-noche-2.jpg" alt="Fachada nocturna"></a>
+      <a href="#img7"><img src="imagenes/interior-dia-2.jpg" alt="Interior diurno"></a>
+      <a href="#img8"><img src="imagenes/baño-2.jpg" alt="Baño"></a>
+    </div>
+  </div>
+
+  <!-- Lightbox Modals -->
+  <div id="img1" class="lightbox"><a href="#"><img src="imagenes/fachada-dia-1.jpg"></a></div>
+  <div id="img2" class="lightbox"><a href="#"><img src="imagenes/fachada-noche-1.jpg"></a></div>
+  <div id="img3" class="lightbox"><a href="#"><img src="imagenes/interior-dia-1.jpg"></a></div>
+  <div id="img4" class="lightbox"><a href="#"><img src="imagenes/baño-1.jpg"></a></div>
+  <div id="img5" class="lightbox"><a href="#"><img src="imagenes/fachada-dia-2.jpg"></a></div>
+  <div id="img6" class="lightbox"><a href="#"><img src="imagenes/fachada-noche-2.jpg"></a></div>
+  <div id="img7" class="lightbox"><a href="#"><img src="imagenes/interior-dia-2.jpg"></a></div>
+  <div id="img8" class="lightbox"><a href="#"><img src="imagenes/baño-2.jpg"></a></div>
+
+</body>
+</html>
